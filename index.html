@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <title>gymcba</title>
+
+    <script>
+        function calcularMasaCorporal() {
+            var peso = parseFloat(document.getElementById('pesoInput').value);
+            var altura = parseFloat(document.getElementById('alturaInput').value);
+
+            if (isNaN(peso) || isNaN(altura)) {
+                alert("Ingresa valores numéricos válidos para peso y altura.");
+                return;
+            }
+
+            var imc = peso / (altura * altura);
+
+            // demostrar resultado directamente en la pág
+            document.getElementById('resultado').innerHTML = "Tu índice de masa corporal es: " + imc.toFixed(2);
+        }
+    </script>
+
+</head>
+<!--body -->
+<body>
+<!-- contenedor duv con header pra el logo,imagen y navbar pra menu-->
+<header class="header">
+        <div class="menu container">
+        <img src="./images/segundlogo.png" alt="">
+           
+           <!--menu desplegable --> 
+<nav class="navbar">
+    <ul>
+        <li><a href="./inicio.html">inicio</a></li>
+        <li><a href="./servicios.html">servicio</a></li>
+        <li><a href="./contactanos.html">contacto</a></li>
+    </ul>
+</nav>
+        </div>
+<!--titulo gym  y txt contenido-->
+<div class="header-content container">
+            <div class="header-tex">
+            
+                <span> GYM CBA</span>
+                <p>
+                Transforma tu cuerpo, transforma tu vida.Únete a nosotros para lograr tus metas de fitness....... 
+                </p>
+                <a href="./informacion.html" class="btn-1">Información</a>
+        
+            </div>
+        </div>
+    </header>
+<!--  sección bien venidos-->
+<section class="about">
+  <div class="about-content container">
+    <div class="about-txt">
+            <span></span>
+            <h2 class="bienvenidos">¡Bien Venidos! </h2>
+            <hr>
+            <p>
+                Te damos la bienvenida a un espacio de entrenamiento, y a una comunidad <br>
+                apasionada por la salud y el bienestar .
+                contamos con un espacio equipado,entrenadores comprometidos <br>
+                contando con el apoyo de cada paso que desees dar,Ya sea que estés aquí para <br>
+                 alcanzar tus metas de acondicionamiento físico, <br>
+                  mejorar tu salud o simplemente disfrutar de un ambiente positivo,
+            </p>
+        </div>
+        <!--imagen de bien venidos-->
+        <div class="about-img">
+         <img src="./images/e1.jpg" alt="" >
+         </div>
+    </div>
+</section>
+  <!--seccion testimonial -->
+<section class="testimonial">
+   <span>Gym CBA</span>
+      <h2>Testimonios</h2>
+  <!-- div testimonio N°1 -->
+<div class="testimonial-content container">
+        <div class="testimonial-1">
+            <!--img de Florencia Varela -->
+            <img class="face" src="./images/t1.jpg" alt="">
+            <h4>Florencia Varela  </h4>
+                 <p>
+                    hoy quiero compartir mi increíble experiencia en
+                     GYM CBA. Antes de unirme, mi relación con el ejercicio era algo 
+                     intermitente y, para ser honesta, carecía de inspiración y
+                      motivación. Todo cambió cuando descubrí
+                     este increíble lugar.
+                     Me sorprendió la diversidad de opciones de entrenamiento, 
+                     desde clases grupales motivadoras hasta entrenamientos
+                      personalizados adaptados a mis metas específicas.
+                 </p>
+                 <!--img estrella de calificación-->
+                 <img  class="start" src="./images/starts.png" alt="">
+        </div>
+  <!-- div testimonio N°2 -->
+        <div class="testimonial-1">
+            <!--img de  ALexis Siampa -->
+            <img class="face" src="./images/t2.jpg" alt="">
+            <h4>Alexis Siamppa </h4>
+                 <p>
+                    Ha sido transformador. No solo he mejorado mi condición física, 
+                    sino que también he encontrado una comunidad que me impulsa a 
+                    alcanzar
+                     lo mejor de mí mismo
+                 </p>
+                 <img  class="start" src="./images/starts.png" alt="">
+        </div>
+    </div>
+</section>
+  <!-- 2° seccion testimonios -->>
+<main class="plans">
+<span>Gym CBA</span>
+<h2>Nuestros Planes</h2>
+<hr>
+<div class="plans-content container"> <!--containes planes-->
+<!--plan N°1-->
+    <div class="plan-1">
+        <span>$10.000</span>
+        <h3>Plan basico</h3>
+        <p>Entrenador</p>
+        <p>Acceso 24/7</p>
+        <p>Dieta</p>
+    </div>
+<!--plan N°2-->
+    <div class="plan-1"> 
+        <span>$13.000</span>
+        <h3>Plan medio</h3>
+        <p>Entrenador</p>
+        <p>Acceso 24/7</p>
+        <p>Dieta</p>
+        <p>Nutrición</p>
+        <p>Duchas</p>
+    </div>
+<!--plan N° 3-->
+    <div class="plan-1"> 
+        <span>$16.000</span>
+        <h3>Plan completo</h3>
+        <p>Entrenador</p>
+        <p>Acceso 24/7</p>
+        <p>Dieta</p>
+        <p>Nutrición</p>
+        <p>Duchas</p>
+        <p>snacks & bebidas</p>
+    </div>
+</div>
+</main>
+<!-- seccion  información de masa muscular-->
+<section class="information">
+    <div class="information-content">
+         <div class="information-txt">
+            <span></span>
+            <h2>Calcula tu masa </h2>
+            <hr>
+            <form class="formimput">
+                <input type="text" id="pesoInput" placeholder="Peso">
+                <input type="text" id="alturaInput" placeholder="Altura">
+                <a href="./tumasa.html" class="btn-1" onclick="calcularMasaCorporal(); event.preventDefault();">Calcular</a>
+                <button type="button" class="btn-1" onclick="reiniciarCalculo()">Reiniciar</button>
+            </form>
+            <div class="resultado" id="resultado"></div>
+            <hr>
+            <hr>
+           <p class="recomendacion"><br> <br> <br>* Ten en cuenta que esto es solo una estimación real de 
+            la masa muscular,consulte con un profesional para info más 
+            específica y precisa.</p>  
+        </div>
+        <!--info de imagen maquinas gym-->
+        <div  class="information-img">
+           <img  src="images/f1.jpg" alt="">
+     </div>
+      </div>
+     </section>
+<!--info de imagen  servicios -->
+    <section class="information-img">
+    <div class="information-content.ifo">
+        <div class="information-img"> 
+            <img  src="images/f2.jpg" style="padding-left: 20%;">
+        </div>
+<!--sección info -->
+        <div class=information-txt>
+             </div>
+           <div> <h2 class="servistitulo">Nuestros   servicios </h2>
+            <hr>
+           </div>
+           <hr>
+        <!--servivios-->
+        <div class="service">
+            <img class="servisimg"  src="./images/i1.svg" style="width: 75px; height:150px" >
+            <h3> CLASES PERSONALIZADAS 
+             <hr>
+               Trabajarás directamente con uno de nuestros entrenadores 
+                altamente calificados, quienes evaluarán tus necesidades,
+                 crearán un programa de ejercicios personalizado y
+                  te guiarán paso a paso para asegurarse de que alcances
+                   tus objetivos </h3>
+          </div>
+           <hr>
+        <div class="service"><!--servicio 2-->
+            <img class="servisimg" src="./images/i3.svg" style="width: 75px; height:150px" >
+            <h3> Clases Grupales Dinámicas 
+                <hr>
+                Ofrecemos una variedad de clases grupales diseñadas 
+                para motivarte, desafiarte y hacerte disfrutar del 
+                ejercicio en un ambiente social. Desde entrenamientos
+                 de alta intensidad como HIIT,hasta clases de yoga 
+                 relajantes, hay algo para todos los gustos y niveles
+                  de condición física.
+            </h3>
+        </div>
+       <div class="service"><!--servicio 3-->
+            <img class="servisimg" src="./images/i2.svg" style="width: 75px; height:150px">
+            <h3> Programas de Nutrición Personalizada
+                <hr>
+                Nuestro servicio de programas de nutrición personalizada 
+                te ofrece la orientación de profesionales especializados
+                 que trabajarán contigo para desarrollar un plan alimenticio 
+                 adaptado a tus necesidades y objetivos específicos.
+              </h3>
+            </div>
+     </div>
+ </div>        
+</section>
+     </div>
+</div>
+<!--seccion de Blog-->
+<section class="blog">  
+<h2>Nuestras Noticias</h2>
+<!--parte del blog 1-->
+<div class="blog-content container">
+    <div class="blog-1">
+        <img src="./images/b1.jpg"  style="width:600px; height:400px;margin: 60px;"   >
+        <div class="blog-txt">
+            <span>blog gym</span>
+            <h3>ÚLTIMAS NOTICIAS</h3>
+            <p> Queremos compartir las últimas novedades y acontecimientos
+                 en GYM CBA ¡Nuestra comunidad está en constante movimiento 
+                 y crecimiento, y queremos que seas parte de todas las noticias!
+            </p>
+        </div>
+    </div>
+    <!--parte del blog 2-->
+    <div class="blog-content container">
+        <div class="blog-1">
+            <img class="blogb2-img" src="./images/b2.jpg" >
+            <div class="blog-txt">
+                <span> Logros Inspiradores de Nuestros Miembros </span>
+                 <p> Queremos destacar los increíbles logros de nuestros
+                     miembros. Desde alcanzar metas de pérdida de peso
+                      hasta establecer nuevos récords personales en 
+                      levantamiento de pesas, cada logro es motivo de 
+                      celebración. Si tienes una historia de éxito que 
+                      te gustaría compartir, ¡háznoslo saber! Queremos
+                       inspirar a otros con tus logros.
+                </p>
+            </div>
+                </div>
+            <!--parte del blog -->
+            <div class="blog-content container">
+                <div class="blog-1">
+                    <img src="./images/b3.jpg" alt="">
+                    <div class="blog-txt">
+                        <span>¡Nueva Clase de Fitness en Grupo! </span>
+                         <p> Anunciamos el lanzamiento de una emocionante clase 
+                            de fitness en grupo: "Energía Total". Diseñada para 
+                            quemar calorías, fortalecer el cuerpo y mejorar la 
+                            resistencia, esta clase combina elementos de cardio,
+                             fuerza y flexibilidad para brindarte una experiencia 
+                             de entrenamiento completa. ¡Asegúrate de consultar
+                              nuestro horario para no perderte la diversión!
+                        </p>
+                    </div>
+                </div>
+        </div>
+   </div>
+ </div>
+</section>
+<!--seccion de contacto-->
+<section class="contact">
+ <div class="contact-content">
+        <span> </span>
+       <div> <h5>374890</h5> </div>
+        <hr>
+       <div><p class="contac__p">Estamos aquí para responder a todas tus preguntas, proporcionar 
+            más información sobre nuestros servicios y programar una 
+            visita para que puedas conocer nuestras instalaciones.
+            Recuerda que el primer paso hacia una vida más saludable 
+            puede comenzar con un simple mensaje o llamada.
+             ¡Estamos ansiosos por ayudarte a alcanzar tus metas y 
+             ser parte de tu
+             emocionante viaje fitness en GYM CBA.
+            </p>  
+            <a href="./contactanos.html" class="btn-1">CONTÁCTANOS</a>  </div>
+    </div>
+</section>
+</body>
+</html>

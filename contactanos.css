@@ -1,0 +1,114 @@
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    font-family:'Poppins', sans-serif ;
+    background-color: #191A1F;
+    margin: 0px;
+    padding: 10px;
+   
+}
+section{
+    padding: 5px;
+    text-align: center;
+}
+.form-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #7a7272;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ h2 {
+    color:#f56349 ;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    
+}
+
+p {
+    line-height: 2.6;
+    color: #e9dfdf;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 15px;
+    margin-left: 2%;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #7b7776;
+    text-align: center;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #f56349;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.button{
+    display: inline-block;
+    padding: 11px 30px;
+    margin-right: 50px;
+    margin-top: 40px;
+    color: #cfbebe;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(254,99,72,1)0% ,
+        rgba(254,140,32,1) 100%);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+.button2{
+    display: inline-block;
+    padding: 11px 30px;
+    margin-left:68%;
+    margin-top: 40px;
+    color: #cfbebe;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(254,99,72,1)0% ,
+        rgba(254,140,32,1) 100%);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+label{
+    display: block;
+    margin-bottom: 2px;
+    color: #f56349;
+}
+input,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+     
+        button:hover {
+            background-color: #2d2c2b;
+        }
